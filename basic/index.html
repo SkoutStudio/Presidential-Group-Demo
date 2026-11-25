@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presidential Group · Βασική έκδοση</title>
+<style>
+  :root { --blue:#1d4e89; --dark:#222; --muted:#666; --light:#f5f5f5; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--dark); line-height:1.6; background:#fff; }
+  img { max-width:100%; display:block; }
+  a { color:var(--blue); }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 16px; }
+  header { background:#fff; border-bottom:1px solid #ddd; position:sticky; top:0; z-index:5; }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; height:64px; gap:16px; }
+  .logo { font-weight:bold; font-size:20px; color:var(--blue); text-decoration:none; }
+  nav { display:flex; gap:18px; font-size:15px; }
+  nav a { color:var(--dark); text-decoration:none; }
+  .hero { position:relative; height:420px; background:#000; }
+  .hero img { width:100%; height:100%; object-fit:cover; opacity:.75; }
+  .hero div { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:#fff; padding:16px; }
+  .hero h1 { font-size:40px; margin:0 0 8px; }
+  .hero p { font-size:18px; margin:0 0 18px; }
+  .btn { display:inline-block; background:var(--blue); color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; font-size:15px; }
+  section { padding:48px 0; }
+  h2 { font-size:28px; text-align:center; margin:0 0 28px; color:var(--blue); }
+  .about p { max-width:760px; margin:0 auto; text-align:center; color:var(--muted); }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; }
+  .card { border:1px solid #ddd; border-radius:6px; overflow:hidden; background:#fff; }
+  .card img { width:100%; height:180px; object-fit:cover; }
+  .card div { padding:14px 16px 18px; }
+  .card h3 { margin:0 0 4px; font-size:18px; }
+  .card small { color:var(--muted); }
+  .card p { font-size:14px; color:var(--muted); margin:8px 0 14px; }
+  .gallery { background:var(--light); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(160px, 1fr)); gap:8px; }
+  .grid img { width:100%; height:130px; object-fit:cover; border-radius:4px; }
+  .contact .wrap { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; }
+  .contact div { background:var(--light); padding:18px; border-radius:6px; }
+  .contact h3 { margin:0 0 6px; font-size:17px; }
+  footer { background:#222; color:#bbb; text-align:center; padding:20px 16px; font-size:13px; }
+  @media (max-width:600px) { nav { display:none; } .hero { height:320px; } .hero h1 { font-size:28px; } }
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#">Presidential Group</a>
+  <nav><a href="#rooms">Καταλύματα</a><a href="#gallery">Φωτογραφίες</a><a href="#contact">Επικοινωνία</a></nav></div></header>
+
+<div class="hero"><img src="../photos/presidential-lemnos-villas/presidential-lemnos-villas-pool-15.jpg" alt="Πισίνα με θέα στο ηλιοβασίλεμα, Λήμνος">
+  <div><h1>Presidential Group</h1><p>Καταλύματα σε Λήμνο και Λέσβο</p><a class="btn" href="#rooms">Δείτε τα καταλύματα</a></div></div>
+
+<section class="about"><div class="wrap"><h2>Καλώς ήρθατε</h2>
+  <p>Το Presidential Group διαθέτει τέσσερα καταλύματα σε Λήμνο και Λέσβο. Προσφέρουμε άνετη διαμονή με θέα στη θάλασσα, πισίνες και όλες τις απαραίτητες παροχές για ξεκούραστες διακοπές.</p></div></section>
+
+<section id="rooms"><div class="wrap"><h2>Τα καταλύματά μας</h2><div class="cards">
+  <div class="card"><img src="../photos/presidential-lemnos-villas/presidential-lemnos-villas-pool-15.jpg" alt="Presidential Lemnos Residences"><div><h3>Presidential Lemnos Residences</h3><small>Πλατύ, Λήμνος</small><p>Πέτρινες βίλες με ιδιωτική πισίνα και θέα στο ηλιοβασίλεμα.</p><a class="btn" href="tel:+306909484988">Κράτηση</a></div></div>
+  <div class="card"><img src="../photos/sotiris-hotel/sotiris-hotel-exterior-01.jpg" alt="Sotiris Hotel Apartments"><div><h3>Sotiris Hotel Apartments</h3><small>Μύρινα, Λήμνος</small><p>Δωμάτια και στούντιο στο κέντρο της Μύρινας, με κήπο.</p><a class="btn" href="tel:+306909484988">Κράτηση</a></div></div>
+  <div class="card"><img src="../photos/presidential-beach-villa/presidential-beach-villa-pool-07.jpg" alt="Presidential Beach Villa"><div><h3>Presidential Beach Villa</h3><small>Μυτιλήνη, Λέσβος</small><p>Βίλα δίπλα στη θάλασσα με πισίνα, γυμναστήριο και game room.</p><a class="btn" href="tel:+306909484988">Κράτηση</a></div></div>
+  <div class="card"><img src="../photos/presidential-sea-view/presidential-sea-view-dining-01.jpg" alt="Presidential Sea View"><div><h3>Presidential Sea View</h3><small>Μυτιλήνη, Λέσβος</small><p>Σύγχρονα διαμερίσματα με θέα στον κόλπο.</p><a class="btn" href="tel:+306909484988">Κράτηση</a></div></div>
+</div></div></section>
+
+<section class="gallery" id="gallery"><div class="wrap"><h2>Φωτογραφίες</h2><div class="grid">
+  <img src="../photos/presidential-lemnos-villas/presidential-lemnos-villas-living-room-01.jpg" alt="Σαλόνι, Lemnos Residences" loading="lazy">
+  <img src="../photos/presidential-lemnos-villas/presidential-lemnos-villas-bedroom-07.jpg" alt="Υπνοδωμάτιο, Lemnos Residences" loading="lazy">
+  <img src="../photos/presidential-lemnos-villas/presidential-lemnos-villas-exterior-04.jpg" alt="Εξωτερικό, Lemnos Residences" loading="lazy">
+  <img src="../photos/sotiris-hotel/sotiris-hotel-reception-01.jpg" alt="Ρεσεψιόν, Sotiris Hotel" loading="lazy">
+  <img src="../photos/sotiris-hotel/sotiris-hotel-bedroom-23.jpg" alt="Δωμάτιο, Sotiris Hotel" loading="lazy">
+  <img src="../photos/presidential-beach-villa/presidential-beach-villa-exterior-01.jpg" alt="Εξωτερικό, Beach Villa" loading="lazy">
+  <img src="../photos/presidential-beach-villa/presidential-beach-villa-living-room-01.jpg" alt="Σαλόνι, Beach Villa" loading="lazy">
+  <img src="../photos/presidential-beach-villa/presidential-beach-villa-bedroom-04.jpg" alt="Υπνοδωμάτιο, Beach Villa" loading="lazy">
+  <img src="../photos/presidential-sea-view/presidential-sea-view-living-room-04.jpg" alt="Σαλόνι, Sea View" loading="lazy">
+  <img src="../photos/presidential-sea-view/presidential-sea-view-bedroom-01.jpg" alt="Υπνοδωμάτιο, Sea View" loading="lazy">
+</div></div></section>
+
+<section class="contact" id="contact"><h2>Επικοινωνία</h2><div class="wrap">
+  <div><h3>Λήμνος</h3>Sotiris Hotel Apartments<br>Λύσης Κύπρου 3, Μύρινα<br>Τηλ. 22540 25416</div>
+  <div><h3>Λέσβος</h3>Presidential Beach Villa &amp; Sea View<br>Μυτιλήνη</div>
+  <div><h3>Κρατήσεις</h3>Τηλ. 690 948 4988<br>Τηλ. 693 469 8929</div>
+</div></section>
+
+<footer>© 2026 Presidential Group · Λήμνος · Λέσβος</footer>
+</body>
+</html>
